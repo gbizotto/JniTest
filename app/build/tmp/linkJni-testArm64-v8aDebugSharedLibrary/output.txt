@@ -1,0 +1,4 @@
+See file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testArm64-v8aDebugSharedLibrary/output.txt for all output for linkJni-testArm64-v8aDebugSharedLibrary.
+linking libjni-test.so successful.
+
+Finished linkJni-testArm64-v8aDebugSharedLibrary, see full log file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testArm64-v8aDebugSharedLibrary/output.txt.

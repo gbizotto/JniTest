@@ -1,0 +1,14 @@
+-shared
+-Wl,-soname,libjni-test.so
+-o
+/Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/binaries/debug/obj/armeabi/libjni-test.so
+/Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/armeabiDebugSharedLibrary/jni-testMainC/2saxyr67bknnscqzhom1we2d/foo.o
+/Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/armeabiDebugSharedLibrary/jni-testMainC/379mas9xx3c0k66lngrkonzx5/main.o
+/Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/armeabiDebugSharedLibrary/jni-testMainC/dcphj3vm5ymaqjjiijfgt5jpe/jni-test.o
+-Wl,--no-undefined
+-Wl,-z,noexecstack
+-Wl,-z,relro
+-Wl,-z,now
+--sysroot=/Users/ilegra/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-arm
+-Wl,--build-id
+-no-canonical-prefixes

@@ -1,0 +1,4 @@
+See file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testX86_64DebugSharedLibraryJni-testMainC/output.txt for all output for compileJni-testX86_64DebugSharedLibraryJni-testMainC.
+compiling jni-test.c successful.
+
+Finished compileJni-testX86_64DebugSharedLibraryJni-testMainC, see full log file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testX86_64DebugSharedLibraryJni-testMainC/output.txt.
