@@ -3,7 +3,6 @@
 -o
 /Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/binaries/debug/obj/armeabi-v7a/libjni-test.so
 /Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/armeabi-v7aDebugSharedLibrary/jni-testMainC/2saxyr67bknnscqzhom1we2d/foo.o
-/Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/armeabi-v7aDebugSharedLibrary/jni-testMainC/379mas9xx3c0k66lngrkonzx5/main.o
 /Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/armeabi-v7aDebugSharedLibrary/jni-testMainC/dcphj3vm5ymaqjjiijfgt5jpe/jni-test.o
 -Wl,--no-undefined
 -Wl,-z,noexecstack

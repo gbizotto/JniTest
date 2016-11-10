@@ -3,7 +3,6 @@
 -o
 /Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/binaries/debug/obj/x86_64/libjni-test.so
 /Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/x86_64DebugSharedLibrary/jni-testMainC/2saxyr67bknnscqzhom1we2d/foo.o
-/Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/x86_64DebugSharedLibrary/jni-testMainC/379mas9xx3c0k66lngrkonzx5/main.o
 /Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/objectFiles/x86_64DebugSharedLibrary/jni-testMainC/dcphj3vm5ymaqjjiijfgt5jpe/jni-test.o
 -Wl,--no-undefined
 -Wl,-z,noexecstack

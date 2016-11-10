@@ -9,28 +9,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.ilegratest.jnitest.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/jni_msgView"
-        android:layout_below="@+id/jni_msgView_2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10"
-        android:id="@+id/jni_msgView_2" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" "
-        android:id="@+id/jni_msgView_3"
-        android:layout_below="@+id/jni_msgView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:id="@+id/jni_msgView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </ScrollView>
 
 </RelativeLayout>

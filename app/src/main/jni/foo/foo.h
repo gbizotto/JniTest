@@ -13,4 +13,8 @@
 
 int foo(int num);
 
+char* printString(char *in);
+
+void testString(char * str);
+
 #endif /* foo_h */

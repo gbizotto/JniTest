@@ -7,7 +7,21 @@
 //
 
 #include "foo.h"
+#include <string.h>
+#include <ctype.h>
+
 
 int foo(int num){
     return 10 + num;
+}
+
+char* printString(char *in){
+
+    int i;
+
+    for(i=0; i< strlen(in); i++){
+        in[i] = toupper(in[i]);
+    }
+
+    return in;
 }
