@@ -2,13 +2,13 @@ apply plugin: 'com.android.model.application'
 
 model {
     android {
-        compileSdkVersion 24
+        compileSdkVersion 23
         buildToolsVersion "24.0.3"
 
         defaultConfig {
             applicationId "br.com.ilegratest.jnitest"
-            minSdkVersion.apiLevel 17
-            targetSdkVersion.apiLevel 24
+            minSdkVersion.apiLevel 19
+            targetSdkVersion.apiLevel 23
             versionCode 1
             versionName "1.0"
         }

@@ -5,7 +5,6 @@
 
 
 
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -140,8 +139,36 @@ Java_br_com_ilegratest_jnitest_MainActivity_listaProdutosIndicados(JNIEnv *env, 
     // TODO
     Perfil perfil = inicializaPerfil();
 
+    char* input_file = " {\n"
+            " \t\"Perfil\" :\n"
+            " \t{\n"
+            "\t\t\"fumante\": 2,\n"
+            "\t\t\"idd\": 54,\n"
+            "\t\t\"codigoProfissao\": 1177,\n"
+            "\t\t\"profCLT\": \"S\",\n"
+            "\t\t\"sexo\": 1,\n"
+            "\t\t\"vigenciaInicial\": 365\n"
+            "\t}\n"
+            "}";
 
+    char* output_file;
+
+    listaProdutosIndicados(input_file, output_file);
 }
+
+JNIEXPORT jstring JNICALL
+Java_br_com_ilegratest_jnitest_MainActivity_enviaJson(JNIEnv *env, jobject instance,
+                                                      jstring json_) {
+    const char *json = env->GetStringUTFChars(json_, 0);
+
+    // TODO
+
+    env->ReleaseStringUTFChars(json_, json);
+
+    return env->NewStringUTF(json);
+}
+
+
 
 #ifdef __cplusplus
 }
