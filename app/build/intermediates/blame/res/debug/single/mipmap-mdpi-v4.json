@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/ilegra/AndroidStudioProjects/JniTest/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/Users/ilegra/AndroidStudioProjects/JniTest/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\ilegra\\AndroidStudioProjects\\JniTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\ilegra\\AndroidStudioProjects\\JniTest\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android\\JniTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Android\\JniTest\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

@@ -1,0 +1,13 @@
+{
+	"Opcoes" : 
+	{
+		"dominio" : 
+		[
+			"Vida Mais Mulher",
+			"Vida Individual",
+			"Vida Mais Simples",
+			"Acidentes Pessoais Individual Plus"
+		],
+		"produto" : [ 33, 31, 34, 32 ]
+	}
+}

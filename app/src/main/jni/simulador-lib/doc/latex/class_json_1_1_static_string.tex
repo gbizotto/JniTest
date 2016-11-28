@@ -1,0 +1,134 @@
+\hypertarget{class_json_1_1_static_string}{}\section{Json\+:\+:Static\+String Class Reference}
+\label{class_json_1_1_static_string}\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+
+
+Lightweight wrapper to tag static string.  
+
+
+
+
+{\ttfamily \#include $<$json.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f}{Static\+String} (const char $\ast$czstring)
+\item 
+\hyperlink{class_json_1_1_static_string_a256a6cc0c630aef670848a0f11707b62}{operator const char $\ast$} () const
+\item 
+const char $\ast$ \hyperlink{class_json_1_1_static_string_ad6be703d432d108623bb0aa06b0b90ca}{c\+\_\+str} () const
+\item 
+\hyperlink{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f}{Static\+String} (const char $\ast$czstring)
+\item 
+\hyperlink{class_json_1_1_static_string_a256a6cc0c630aef670848a0f11707b62}{operator const char $\ast$} () const
+\item 
+const char $\ast$ \hyperlink{class_json_1_1_static_string_ad6be703d432d108623bb0aa06b0b90ca}{c\+\_\+str} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{class_json_1_1_static_string_add9eec7693057fa981b4f0f454dc2aee}{c\+\_\+str\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lightweight wrapper to tag static string. 
+
+\hyperlink{class_json_1_1_value}{Value} constructor and object\+Value member assignement takes advantage of the \hyperlink{class_json_1_1_static_string}{Static\+String} and avoid the cost of string duplication when storing the string or the member name.
+
+Example of usage\+: 
+\begin{DoxyCode}
+\hyperlink{class_json_1_1_value}{Json::Value} aValue( \hyperlink{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f}{StaticString}(\textcolor{stringliteral}{"some text"}) );
+\hyperlink{class_json_1_1_value}{Json::Value} object;
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f}{StaticString} code(\textcolor{stringliteral}{"code"});
+\textcolor{keywordtype}{object}[code] = 1234;
+\end{DoxyCode}
+ 
+
+Definition at line 567 of file json.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f}{}\label{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f} 
+\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}!Static\+String@{Static\+String}}
+\index{Static\+String@{Static\+String}!Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+\subsubsection{\texorpdfstring{Static\+String()}{StaticString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Json\+::\+Static\+String\+::\+Static\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{czstring }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 569 of file json.\+h.
+
+\hypertarget{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f}{}\label{class_json_1_1_static_string_afb6baf1ec078ce76f0b0f9b39d19437f} 
+\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}!Static\+String@{Static\+String}}
+\index{Static\+String@{Static\+String}!Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+\subsubsection{\texorpdfstring{Static\+String()}{StaticString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Json\+::\+Static\+String\+::\+Static\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{czstring }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 131 of file value.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_json_1_1_static_string_ad6be703d432d108623bb0aa06b0b90ca}{}\label{class_json_1_1_static_string_ad6be703d432d108623bb0aa06b0b90ca} 
+\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}!c\+\_\+str@{c\+\_\+str}}
+\index{c\+\_\+str@{c\+\_\+str}!Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+\subsubsection{\texorpdfstring{c\+\_\+str()}{c\_str()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const char$\ast$ Json\+::\+Static\+String\+::c\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 135 of file value.\+h.
+
+\hypertarget{class_json_1_1_static_string_ad6be703d432d108623bb0aa06b0b90ca}{}\label{class_json_1_1_static_string_ad6be703d432d108623bb0aa06b0b90ca} 
+\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}!c\+\_\+str@{c\+\_\+str}}
+\index{c\+\_\+str@{c\+\_\+str}!Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+\subsubsection{\texorpdfstring{c\+\_\+str()}{c\_str()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char$\ast$ Json\+::\+Static\+String\+::c\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 573 of file json.\+h.
+
+\hypertarget{class_json_1_1_static_string_a256a6cc0c630aef670848a0f11707b62}{}\label{class_json_1_1_static_string_a256a6cc0c630aef670848a0f11707b62} 
+\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}!operator const char $\ast$@{operator const char $\ast$}}
+\index{operator const char $\ast$@{operator const char $\ast$}!Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+\subsubsection{\texorpdfstring{operator const char $\ast$()}{operator const char *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Json\+::\+Static\+String\+::operator const char $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 133 of file value.\+h.
+
+\hypertarget{class_json_1_1_static_string_a256a6cc0c630aef670848a0f11707b62}{}\label{class_json_1_1_static_string_a256a6cc0c630aef670848a0f11707b62} 
+\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}!operator const char $\ast$@{operator const char $\ast$}}
+\index{operator const char $\ast$@{operator const char $\ast$}!Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+\subsubsection{\texorpdfstring{operator const char $\ast$()}{operator const char *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Json\+::\+Static\+String\+::operator const char $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 571 of file json.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_json_1_1_static_string_add9eec7693057fa981b4f0f454dc2aee}{}\label{class_json_1_1_static_string_add9eec7693057fa981b4f0f454dc2aee} 
+\index{Json\+::\+Static\+String@{Json\+::\+Static\+String}!c\+\_\+str\+\_\+@{c\+\_\+str\+\_\+}}
+\index{c\+\_\+str\+\_\+@{c\+\_\+str\+\_\+}!Json\+::\+Static\+String@{Json\+::\+Static\+String}}
+\subsubsection{\texorpdfstring{c\+\_\+str\+\_\+}{c\_str\_}}
+{\footnotesize\ttfamily const char $\ast$ Json\+::\+Static\+String\+::c\+\_\+str\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 576 of file json.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/609431/workspace/\+Simulador-\/\+Lib/\+J\+S\+O\+N\+C\+P\+P/dist/json/\hyperlink{dist_2json_2json_8h}{json.\+h}\item 
+C\+:/\+Users/609431/workspace/\+Simulador-\/\+Lib/\+J\+S\+O\+N\+C\+P\+P/include/json/\hyperlink{value_8h}{value.\+h}\end{DoxyCompactItemize}

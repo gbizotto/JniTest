@@ -1,0 +1,224 @@
+\hypertarget{calc__sim_8h}{}\section{C\+:/\+Users/609431/workspace/\+Simulador-\/\+Lib/calc\+\_\+sim.h File Reference}
+\label{calc__sim_8h}\index{C\+:/\+Users/609431/workspace/\+Simulador-\/\+Lib/calc\+\_\+sim.\+h@{C\+:/\+Users/609431/workspace/\+Simulador-\/\+Lib/calc\+\_\+sim.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$json/json.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Tabela.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Perfil.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Profissao.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Produto.\+h\char`\"{}}\newline
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55bad04d7145337b4c602725c632a0cf1746}{S\+IM} = 1, 
+\hyperlink{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55ba1b1025ed533e5e05f6bf387ee47abf0f}{N\+AO}
+ \}
+\item 
+enum \{ \newline
+\hyperlink{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a97bce951e4585a39601c04d86bb14ffd}{VI} = 31, 
+\hyperlink{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7ad7e0271fd7a5e57055143bd0aeb27340}{A\+P\+IP}, 
+\hyperlink{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7ae30608ab43d58bc03940f0e9bd90a018}{V\+MM}, 
+\hyperlink{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a12933a5f8f2f9203543ef5b1b14dfe75}{V\+MS}, 
+\newline
+\hyperlink{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a2ff9ec3f81f30b7c7959312d2099f3c5}{A\+P\+I\+CP}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{calc__sim_8h_aee90db34b9433ba6e2bfdeb55c08944e}{lista\+Produtos\+Indicados} (const char $\ast$input\+\_\+file, const char $\ast$output\+\_\+file)
+\item 
+double \hyperlink{calc__sim_8h_a50fc561c84f2b1630045d01693e4c72e}{grava\+Valor\+Premio} (const char $\ast$perfil\+\_\+input\+\_\+file, const char $\ast$produto\+\_\+input\+\_\+file, const char $\ast$output\+\_\+file)
+\item 
+\hyperlink{class_perfil}{Perfil} \hyperlink{calc__sim_8h_a0bdd248abea889dd217e8d1588b6bbc9}{inicializa\+Perfil} ()
+\item 
+\hyperlink{class_json_1_1_value}{Json\+::\+Value} \hyperlink{calc__sim_8h_ababea056c61ee764fddee4abcce282a8}{retorna\+Value\+J\+S\+ON} (const char $\ast$arquivo)
+\item 
+void \hyperlink{calc__sim_8h_a3dece9df4a44bc4449a206727f27949c}{cria\+Perfil} (const \hyperlink{class_json_1_1_value}{Json\+::\+Value} \&val, \hyperlink{class_perfil}{Perfil} \&perfil)
+\item 
+\hyperlink{class_produto}{Produto} \hyperlink{calc__sim_8h_a92868c3a775609609e3316d972224118}{inicializa\+Produto} ()
+\item 
+void \hyperlink{calc__sim_8h_a8ece58636718558c4a99392b7b014c4f}{cria\+Produto} (const \hyperlink{class_json_1_1_value}{Json\+::\+Value} \&val, \hyperlink{class_produto}{Produto} \&produto)
+\item 
+double \hyperlink{calc__sim_8h_a84d2c09507fafe8edea776fbcd87aa1c}{calcula\+Imprime\+Premio} (const \hyperlink{class_produto}{Produto} \&produto, const \hyperlink{class_perfil}{Perfil} \&perfil)
+\item 
+double \hyperlink{calc__sim_8h_ade2658dbfacf7994fe3588a804301ea8}{calcula\+Premio} (const \hyperlink{class_produto}{Produto} \&produto, const \hyperlink{class_perfil}{Perfil} \&perfil)
+\item 
+void \hyperlink{calc__sim_8h_aa41630ec0222b64980e5dcfb64e858d9}{monta\+J\+S\+O\+N\+Premio} (double premio, const char $\ast$output\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55b}{}\label{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55b} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+IM@{S\+IM}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!S\+IM@{S\+IM}}}\hypertarget{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55bad04d7145337b4c602725c632a0cf1746}{}\label{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55bad04d7145337b4c602725c632a0cf1746} 
+S\+IM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+AO@{N\+AO}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!N\+AO@{N\+AO}}}\hypertarget{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55ba1b1025ed533e5e05f6bf387ee47abf0f}{}\label{calc__sim_8h_a06fc87d81c62e9abb8790b6e5713c55ba1b1025ed533e5e05f6bf387ee47abf0f} 
+N\+AO&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 21 of file calc\+\_\+sim.\+h.
+
+\hypertarget{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7}{}\label{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VI@{VI}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!VI@{VI}}}\hypertarget{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a97bce951e4585a39601c04d86bb14ffd}{}\label{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a97bce951e4585a39601c04d86bb14ffd} 
+VI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+P\+IP@{A\+P\+IP}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!A\+P\+IP@{A\+P\+IP}}}\hypertarget{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7ad7e0271fd7a5e57055143bd0aeb27340}{}\label{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7ad7e0271fd7a5e57055143bd0aeb27340} 
+A\+P\+IP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+MM@{V\+MM}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!V\+MM@{V\+MM}}}\hypertarget{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7ae30608ab43d58bc03940f0e9bd90a018}{}\label{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7ae30608ab43d58bc03940f0e9bd90a018} 
+V\+MM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+MS@{V\+MS}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!V\+MS@{V\+MS}}}\hypertarget{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a12933a5f8f2f9203543ef5b1b14dfe75}{}\label{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a12933a5f8f2f9203543ef5b1b14dfe75} 
+V\+MS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+P\+I\+CP@{A\+P\+I\+CP}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!A\+P\+I\+CP@{A\+P\+I\+CP}}}\hypertarget{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a2ff9ec3f81f30b7c7959312d2099f3c5}{}\label{calc__sim_8h_adf764cbdea00d65edcd07bb9953ad2b7a2ff9ec3f81f30b7c7959312d2099f3c5} 
+A\+P\+I\+CP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 22 of file calc\+\_\+sim.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{calc__sim_8h_a84d2c09507fafe8edea776fbcd87aa1c}{}\label{calc__sim_8h_a84d2c09507fafe8edea776fbcd87aa1c} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!calcula\+Imprime\+Premio@{calcula\+Imprime\+Premio}}
+\index{calcula\+Imprime\+Premio@{calcula\+Imprime\+Premio}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{calcula\+Imprime\+Premio()}{calculaImprimePremio()}}
+{\footnotesize\ttfamily double calcula\+Imprime\+Premio (\begin{DoxyParamCaption}\item[{const \hyperlink{class_produto}{Produto} \&}]{produto,  }\item[{const \hyperlink{class_perfil}{Perfil} \&}]{perfil }\end{DoxyParamCaption})}
+
+Calcula, imprime os valores e retorna o valor do prêmio total conforme o perfil e o produto 
+
+Definition at line 173 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_ade2658dbfacf7994fe3588a804301ea8}{}\label{calc__sim_8h_ade2658dbfacf7994fe3588a804301ea8} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!calcula\+Premio@{calcula\+Premio}}
+\index{calcula\+Premio@{calcula\+Premio}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{calcula\+Premio()}{calculaPremio()}}
+{\footnotesize\ttfamily double calcula\+Premio (\begin{DoxyParamCaption}\item[{const \hyperlink{class_produto}{Produto} \&}]{produto,  }\item[{const \hyperlink{class_perfil}{Perfil} \&}]{perfil }\end{DoxyParamCaption})}
+
+Calcula e retorna o valor do prêmio total conforme o perfil e o produto Vida Mais Simples~\newline
+ \begin{eqnarray*} Premio&=&(CobMorte*TaxaMorte \\ &+&\frac{CobMorteAcidental}{2.0}*TaxaMorteAcidental \\ &+&CobInvalidezAcidente*TaxaInvalidezAcidente \\ &+&CobAssistenciaFuneral*TaxaAssistenciaFuneral) \\ &*&(1+\frac{IOF}{100}) \end{eqnarray*}
+
+Vida Mais Mulher~\newline
+ \begin{eqnarray*} Premio&=&(CobMorte*TaxaMorte*Operacao \\ &+&CobCancer*TaxaCancer*Operacao \\ &+&CobInvalidezAcidente*TaxaInvalidezAcidente*Operacao \\ &+&CobAssistenciaFuneral*TaxaAssistenciaFuneral*Operacao) \\ &*&(1+\frac{IOF}{100}) \end{eqnarray*}
+
+Vida Individual~\newline
+ \begin{eqnarray*} Premio&=&((CobMorte*TaxaMorte*Operacao*(1+\frac{IOF}{100})) \\ &+&(\frac{CobMorteAcidental}{2.0}*TaxaMorteAcidental*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobInvalidezAcidente*TaxaInvalidezAcidente*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobAntecipacaoDoenca*TaxaAntecipacaoDoenca*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobAssistenciaFuneral*TaxaAssistenciaFuneral*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobDiariaDIT*TaxaDiariaDIT*Franquia*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobDespesasMedicas*TaxaDespesasMedicas*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobDoencasGraves*TaxaDoencasGraves*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobMajoracao*TaxaMajoracao*Operacao*(1+\frac{IOF}{100}))) \end{eqnarray*}
+
+Acidentes Pessoais Individual Plus~\newline
+ \begin{eqnarray*} Premio&=&((CobMorteAcidental*TaxaMorteAcidental*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobInvalidezAcidente*TaxaInvalidezAcidente*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobDespesasMedicas*TaxaDespesasMedicas*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobMajoracao*TaxaMajoracao*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobDiariaDIT*TaxaDiariaDIT*Franquia*Operacao*(1+\frac{IOF}{100}))) \end{eqnarray*}
+
+Acidentes Pessoais Individual Curto Prazo~\newline
+ \begin{eqnarray*} Premio&=&((CobMorteAcidental*TaxaMorteAcidental*\frac{PercDiasVigencia}{100}*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobInvalidezAcidente*TaxaInvalidezAcidente*\frac{PercDiasVigencia}{100}*Operacao*(1+\frac{IOF}{100})) \\ &+&(CobDespesasMedicas*TaxaDespesasMedicas*\frac{PercDiasVigencia}{100}*Operacao*(1+\frac{IOF}{100}))) \end{eqnarray*}
+
+Definition at line 472 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_a3dece9df4a44bc4449a206727f27949c}{}\label{calc__sim_8h_a3dece9df4a44bc4449a206727f27949c} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!cria\+Perfil@{cria\+Perfil}}
+\index{cria\+Perfil@{cria\+Perfil}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{cria\+Perfil()}{criaPerfil()}}
+{\footnotesize\ttfamily void cria\+Perfil (\begin{DoxyParamCaption}\item[{const \hyperlink{class_json_1_1_value}{Json\+::\+Value} \&}]{val,  }\item[{\hyperlink{class_perfil}{Perfil} \&}]{perfil }\end{DoxyParamCaption})}
+
+Lê um Value J\+S\+ON e atribui os valores lidos a um objeto \hyperlink{class_perfil}{Perfil} 
+
+Definition at line 24 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_a8ece58636718558c4a99392b7b014c4f}{}\label{calc__sim_8h_a8ece58636718558c4a99392b7b014c4f} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!cria\+Produto@{cria\+Produto}}
+\index{cria\+Produto@{cria\+Produto}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{cria\+Produto()}{criaProduto()}}
+{\footnotesize\ttfamily void cria\+Produto (\begin{DoxyParamCaption}\item[{const \hyperlink{class_json_1_1_value}{Json\+::\+Value} \&}]{val,  }\item[{\hyperlink{class_produto}{Produto} \&}]{produto }\end{DoxyParamCaption})}
+
+Lê um Value J\+S\+ON e atribui os valores lidos a um objeto \hyperlink{class_produto}{Produto} 
+
+Definition at line 111 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_a50fc561c84f2b1630045d01693e4c72e}{}\label{calc__sim_8h_a50fc561c84f2b1630045d01693e4c72e} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!grava\+Valor\+Premio@{grava\+Valor\+Premio}}
+\index{grava\+Valor\+Premio@{grava\+Valor\+Premio}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{grava\+Valor\+Premio()}{gravaValorPremio()}}
+{\footnotesize\ttfamily double grava\+Valor\+Premio (\begin{DoxyParamCaption}\item[{const char $\ast$}]{perfil\+\_\+input\+\_\+file,  }\item[{const char $\ast$}]{produto\+\_\+input\+\_\+file,  }\item[{const char $\ast$}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+Recebe arquivo J\+S\+ON com dados do perfil, J\+S\+ON com dados do produto e devolve J\+S\+ON com o valor do prêmio. ê os arquivos J\+S\+ON, instancia os objetos necessários, calcula o prêmio e grava no J\+S\+ON de saída.
+
+Recebe arquivo J\+S\+ON com dados do perfil, J\+S\+ON com dados do produto e J\+S\+ON de saída 
+
+Definition at line 741 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_a0bdd248abea889dd217e8d1588b6bbc9}{}\label{calc__sim_8h_a0bdd248abea889dd217e8d1588b6bbc9} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!inicializa\+Perfil@{inicializa\+Perfil}}
+\index{inicializa\+Perfil@{inicializa\+Perfil}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{inicializa\+Perfil()}{inicializaPerfil()}}
+{\footnotesize\ttfamily \hyperlink{class_perfil}{Perfil} inicializa\+Perfil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Inicializa e retorna um objeto \hyperlink{class_perfil}{Perfil} 
+
+Definition at line 6 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_a92868c3a775609609e3316d972224118}{}\label{calc__sim_8h_a92868c3a775609609e3316d972224118} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!inicializa\+Produto@{inicializa\+Produto}}
+\index{inicializa\+Produto@{inicializa\+Produto}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{inicializa\+Produto()}{inicializaProduto()}}
+{\footnotesize\ttfamily \hyperlink{class_produto}{Produto} inicializa\+Produto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Inicializa e retorna um objeto \hyperlink{class_produto}{Produto} 
+
+Definition at line 103 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_aee90db34b9433ba6e2bfdeb55c08944e}{}\label{calc__sim_8h_aee90db34b9433ba6e2bfdeb55c08944e} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!lista\+Produtos\+Indicados@{lista\+Produtos\+Indicados}}
+\index{lista\+Produtos\+Indicados@{lista\+Produtos\+Indicados}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{lista\+Produtos\+Indicados()}{listaProdutosIndicados()}}
+{\footnotesize\ttfamily void lista\+Produtos\+Indicados (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input\+\_\+file,  }\item[{const char $\ast$}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+Recebe arquivo J\+S\+ON com dados do perfil e devolve J\+S\+ON ordenado com os produtos recomendados. ê o arquivo J\+S\+ON, instancia o objeto \hyperlink{class_perfil}{Perfil} e grava no J\+S\+ON de saída.
+
+Cria uma lista de produtos disponíveis num arquivo J\+S\+ON 
+
+Definition at line 64 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_aa41630ec0222b64980e5dcfb64e858d9}{}\label{calc__sim_8h_aa41630ec0222b64980e5dcfb64e858d9} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!monta\+J\+S\+O\+N\+Premio@{monta\+J\+S\+O\+N\+Premio}}
+\index{monta\+J\+S\+O\+N\+Premio@{monta\+J\+S\+O\+N\+Premio}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{monta\+J\+S\+O\+N\+Premio()}{montaJSONPremio()}}
+{\footnotesize\ttfamily void monta\+J\+S\+O\+N\+Premio (\begin{DoxyParamCaption}\item[{double}]{premio,  }\item[{const char $\ast$}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+Recebe o valor calculado do prêmio e salva um J\+S\+ON 
+
+Definition at line 725 of file calc\+\_\+sim.\+cpp.
+
+\hypertarget{calc__sim_8h_ababea056c61ee764fddee4abcce282a8}{}\label{calc__sim_8h_ababea056c61ee764fddee4abcce282a8} 
+\index{calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}!retorna\+Value\+J\+S\+ON@{retorna\+Value\+J\+S\+ON}}
+\index{retorna\+Value\+J\+S\+ON@{retorna\+Value\+J\+S\+ON}!calc\+\_\+sim.\+h@{calc\+\_\+sim.\+h}}
+\subsubsection{\texorpdfstring{retorna\+Value\+J\+S\+O\+N()}{retornaValueJSON()}}
+{\footnotesize\ttfamily \hyperlink{class_json_1_1_value}{Json\+::\+Value} retorna\+Value\+J\+S\+ON (\begin{DoxyParamCaption}\item[{const char $\ast$}]{arquivo }\end{DoxyParamCaption})}
+
+Recebe um arquivo J\+S\+ON e retorna um Value J\+S\+O\+N\+C\+PP 
+
+Definition at line 14 of file calc\+\_\+sim.\+cpp.
+

@@ -1,0 +1,11 @@
+ {
+ 	"Perfil" :
+ 	{
+		"fumante": 2,
+		"idd": 54,
+		"codigoProfissao": 1177,
+		"profCLT": "S",
+		"sexo": 1,
+		"vigenciaInicial": 365
+	}
+}

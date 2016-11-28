@@ -1,0 +1,462 @@
+\hypertarget{class_perfil}{}\section{Perfil Class Reference}
+\label{class_perfil}\index{Perfil@{Perfil}}
+
+
+{\ttfamily \#include $<$Perfil.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3}{tempo} \{ \hyperlink{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3a9c003caba60bd9a7cf7c52746bb6e0b2}{V\+I\+G\+E\+N\+C\+I\+A\+\_\+\+M\+I\+N\+I\+MA} = 365, 
+\hyperlink{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3a05e56c529fb915ffb0bf8004b3df04c9}{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+MA} = 65, 
+\hyperlink{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3ac1becd537e502063c426dc298842bae2}{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+M\+A\+\_\+\+A\+P\+I\+CP} = 71
+ \}
+\item 
+enum \hyperlink{class_perfil_a07ccd896064bf4f787fb46a0d809f531}{sexo\+\_\+tipo} \{ \hyperlink{class_perfil_a07ccd896064bf4f787fb46a0d809f531ac98ef6887790c5ef95f80ae81611e3b7}{F\+E\+M\+I\+N\+I\+NO} = 1, 
+\hyperlink{class_perfil_a07ccd896064bf4f787fb46a0d809f531a476dc9c03563ad1895d25d2b17a4e462}{M\+A\+S\+C\+U\+L\+I\+NO}
+ \}
+\item 
+enum \{ \hyperlink{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3a643e2b60235b086a2bcd2c1aededfa61}{S\+IM} = 1, 
+\hyperlink{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3ac94358468c320a7c2ba0f437aab8b600}{N\+AO}
+ \}
+\item 
+enum \hyperlink{class_perfil_a2688d76eb997d87ba170d6fba8168901}{regime\+\_\+contrato} \{ \hyperlink{class_perfil_a2688d76eb997d87ba170d6fba8168901a4408d26d2c37edafc1d8af52e4294749}{C\+LT} = 1, 
+\hyperlink{class_perfil_a2688d76eb997d87ba170d6fba8168901a33340bca22814a9ef6c12b3522757428}{PJ}
+ \}
+\item 
+enum \hyperlink{class_perfil_a62df98cbddfe97746b0039e4daa22cd2}{fator\+\_\+segregacao} \{ \hyperlink{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a6cec648ad9408b1c1922baf5ab80b6de}{F\+A\+T\+O\+R\+\_\+A} = 1, 
+\hyperlink{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a596919cdb44b16c51526e8a97b579f1d}{F\+A\+T\+O\+R\+\_\+B}, 
+\hyperlink{class_perfil_a62df98cbddfe97746b0039e4daa22cd2aea6e16d8367918ba7e61787d9ab05403}{F\+A\+T\+O\+R\+\_\+C}, 
+\hyperlink{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a7281913972da3c79d9bdb5098e8b94cb}{F\+A\+T\+O\+R\+\_\+D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_perfil_a7d33c31b4d676edb7d5e5ff2905ce0c0}{Perfil} ()
+\item 
+virtual \hyperlink{class_perfil_a23978d891d08e7e8b4547849429eacec}{$\sim$\+Perfil} ()
+\item 
+void \hyperlink{class_perfil_ae3e87c88b74f8f1ac18a9fb79906d7bf}{determina\+Fator\+De\+Segregacao} ()
+\begin{DoxyCompactList}\small\item\em Determina o fator de segregação. \end{DoxyCompactList}\item 
+int \hyperlink{class_perfil_a235697fa0afc9536654196e7651393dd}{get\+Fumante} () const
+\item 
+void \hyperlink{class_perfil_ad1eda80a3ead2aab4fb6ee4a87420dce}{set\+Fumante} (int \hyperlink{class_perfil_a4ced26fed0c87e3fa425bc3d7e8cdc87}{fumante})
+\item 
+int \hyperlink{class_perfil_a4d7f7fd4f521e3054fd78ef180c2ef3b}{get\+Grupo} () const
+\item 
+void \hyperlink{class_perfil_a171fbb4fd0041f932ce6505ff146325d}{set\+Grupo} (int \hyperlink{class_perfil_ad6408bcf9e079be0f8d5df42c0d9a080}{grupo})
+\item 
+int \hyperlink{class_perfil_a384c2efb684010011a4a42520433c03a}{get\+Idade} () const
+\item 
+void \hyperlink{class_perfil_a2ba0e4d30dab55c5ef3ab1dbfcb6f95f}{set\+Idade} (int \hyperlink{class_perfil_a310f83d33bf7be6a42b8c91d767e3597}{idade})
+\item 
+int \hyperlink{class_perfil_a67a0adbb4f1364c53e10c096b6ae6fc4}{get\+Sexo} () const
+\item 
+void \hyperlink{class_perfil_ab9b481a1fc16ab6534e450b34e5f61fc}{set\+Sexo} (int \hyperlink{class_perfil_a811437646338aa346006d4edd7fda9e0}{sexo})
+\item 
+int \hyperlink{class_perfil_ab01922cd35d36b06d408956865650ab6}{get\+Regime} () const
+\item 
+void \hyperlink{class_perfil_ab292bc51eb2c229dabb79ca5788d2f61}{set\+Regime} (int \hyperlink{class_perfil_a4194b50257455f7c9d7c92555344ed47}{regime})
+\item 
+int \hyperlink{class_perfil_a75774f6d3b07d76780d638f4e2660e53}{get\+Vigencia} () const
+\item 
+void \hyperlink{class_perfil_aefc002d90218c1703a7cf26679480086}{set\+Vigencia} (int \hyperlink{class_perfil_ad5fdbf33a924b01cb3e30c364fde8a56}{vigencia})
+\item 
+int \hyperlink{class_perfil_a4ffc0651290f190979139cd06cf635ac}{get\+Segregacao} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_perfil_a4ced26fed0c87e3fa425bc3d7e8cdc87}{fumante}
+\item 
+int \hyperlink{class_perfil_ad6408bcf9e079be0f8d5df42c0d9a080}{grupo}
+\item 
+int \hyperlink{class_perfil_a310f83d33bf7be6a42b8c91d767e3597}{idade}
+\item 
+int \hyperlink{class_perfil_a4194b50257455f7c9d7c92555344ed47}{regime}
+\item 
+int \hyperlink{class_perfil_a811437646338aa346006d4edd7fda9e0}{sexo}
+\item 
+int \hyperlink{class_perfil_ad5fdbf33a924b01cb3e30c364fde8a56}{vigencia}
+\item 
+int \hyperlink{class_perfil_a007271b5f462827a6ade8af3a9ff0dc5}{segregacao}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Perfil.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3}{}\label{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+IM@{S\+IM}!Perfil@{Perfil}}\index{Perfil@{Perfil}!S\+IM@{S\+IM}}}\hypertarget{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3a643e2b60235b086a2bcd2c1aededfa61}{}\label{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3a643e2b60235b086a2bcd2c1aededfa61} 
+S\+IM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+AO@{N\+AO}!Perfil@{Perfil}}\index{Perfil@{Perfil}!N\+AO@{N\+AO}}}\hypertarget{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3ac94358468c320a7c2ba0f437aab8b600}{}\label{class_perfil_a9f55b99cc5dabbe0b75f0bce279107f3ac94358468c320a7c2ba0f437aab8b600} 
+N\+AO&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 75 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a62df98cbddfe97746b0039e4daa22cd2}{}\label{class_perfil_a62df98cbddfe97746b0039e4daa22cd2} 
+\index{Perfil@{Perfil}!fator\+\_\+segregacao@{fator\+\_\+segregacao}}
+\index{fator\+\_\+segregacao@{fator\+\_\+segregacao}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{fator\+\_\+segregacao}{fator\_segregacao}}
+{\footnotesize\ttfamily enum \hyperlink{class_perfil_a62df98cbddfe97746b0039e4daa22cd2}{Perfil\+::fator\+\_\+segregacao}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+T\+O\+R\+\_\+A@{F\+A\+T\+O\+R\+\_\+A}!Perfil@{Perfil}}\index{Perfil@{Perfil}!F\+A\+T\+O\+R\+\_\+A@{F\+A\+T\+O\+R\+\_\+A}}}\hypertarget{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a6cec648ad9408b1c1922baf5ab80b6de}{}\label{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a6cec648ad9408b1c1922baf5ab80b6de} 
+F\+A\+T\+O\+R\+\_\+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+T\+O\+R\+\_\+B@{F\+A\+T\+O\+R\+\_\+B}!Perfil@{Perfil}}\index{Perfil@{Perfil}!F\+A\+T\+O\+R\+\_\+B@{F\+A\+T\+O\+R\+\_\+B}}}\hypertarget{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a596919cdb44b16c51526e8a97b579f1d}{}\label{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a596919cdb44b16c51526e8a97b579f1d} 
+F\+A\+T\+O\+R\+\_\+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+T\+O\+R\+\_\+C@{F\+A\+T\+O\+R\+\_\+C}!Perfil@{Perfil}}\index{Perfil@{Perfil}!F\+A\+T\+O\+R\+\_\+C@{F\+A\+T\+O\+R\+\_\+C}}}\hypertarget{class_perfil_a62df98cbddfe97746b0039e4daa22cd2aea6e16d8367918ba7e61787d9ab05403}{}\label{class_perfil_a62df98cbddfe97746b0039e4daa22cd2aea6e16d8367918ba7e61787d9ab05403} 
+F\+A\+T\+O\+R\+\_\+C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+T\+O\+R\+\_\+D@{F\+A\+T\+O\+R\+\_\+D}!Perfil@{Perfil}}\index{Perfil@{Perfil}!F\+A\+T\+O\+R\+\_\+D@{F\+A\+T\+O\+R\+\_\+D}}}\hypertarget{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a7281913972da3c79d9bdb5098e8b94cb}{}\label{class_perfil_a62df98cbddfe97746b0039e4daa22cd2a7281913972da3c79d9bdb5098e8b94cb} 
+F\+A\+T\+O\+R\+\_\+D&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 77 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a2688d76eb997d87ba170d6fba8168901}{}\label{class_perfil_a2688d76eb997d87ba170d6fba8168901} 
+\index{Perfil@{Perfil}!regime\+\_\+contrato@{regime\+\_\+contrato}}
+\index{regime\+\_\+contrato@{regime\+\_\+contrato}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{regime\+\_\+contrato}{regime\_contrato}}
+{\footnotesize\ttfamily enum \hyperlink{class_perfil_a2688d76eb997d87ba170d6fba8168901}{Perfil\+::regime\+\_\+contrato}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+LT@{C\+LT}!Perfil@{Perfil}}\index{Perfil@{Perfil}!C\+LT@{C\+LT}}}\hypertarget{class_perfil_a2688d76eb997d87ba170d6fba8168901a4408d26d2c37edafc1d8af52e4294749}{}\label{class_perfil_a2688d76eb997d87ba170d6fba8168901a4408d26d2c37edafc1d8af52e4294749} 
+C\+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PJ@{PJ}!Perfil@{Perfil}}\index{Perfil@{Perfil}!PJ@{PJ}}}\hypertarget{class_perfil_a2688d76eb997d87ba170d6fba8168901a33340bca22814a9ef6c12b3522757428}{}\label{class_perfil_a2688d76eb997d87ba170d6fba8168901a33340bca22814a9ef6c12b3522757428} 
+PJ&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 76 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a07ccd896064bf4f787fb46a0d809f531}{}\label{class_perfil_a07ccd896064bf4f787fb46a0d809f531} 
+\index{Perfil@{Perfil}!sexo\+\_\+tipo@{sexo\+\_\+tipo}}
+\index{sexo\+\_\+tipo@{sexo\+\_\+tipo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{sexo\+\_\+tipo}{sexo\_tipo}}
+{\footnotesize\ttfamily enum \hyperlink{class_perfil_a07ccd896064bf4f787fb46a0d809f531}{Perfil\+::sexo\+\_\+tipo}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+M\+I\+N\+I\+NO@{F\+E\+M\+I\+N\+I\+NO}!Perfil@{Perfil}}\index{Perfil@{Perfil}!F\+E\+M\+I\+N\+I\+NO@{F\+E\+M\+I\+N\+I\+NO}}}\hypertarget{class_perfil_a07ccd896064bf4f787fb46a0d809f531ac98ef6887790c5ef95f80ae81611e3b7}{}\label{class_perfil_a07ccd896064bf4f787fb46a0d809f531ac98ef6887790c5ef95f80ae81611e3b7} 
+F\+E\+M\+I\+N\+I\+NO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+S\+C\+U\+L\+I\+NO@{M\+A\+S\+C\+U\+L\+I\+NO}!Perfil@{Perfil}}\index{Perfil@{Perfil}!M\+A\+S\+C\+U\+L\+I\+NO@{M\+A\+S\+C\+U\+L\+I\+NO}}}\hypertarget{class_perfil_a07ccd896064bf4f787fb46a0d809f531a476dc9c03563ad1895d25d2b17a4e462}{}\label{class_perfil_a07ccd896064bf4f787fb46a0d809f531a476dc9c03563ad1895d25d2b17a4e462} 
+M\+A\+S\+C\+U\+L\+I\+NO&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 74 of file Perfil.\+h.
+
+\hypertarget{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3}{}\label{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3} 
+\index{Perfil@{Perfil}!tempo@{tempo}}
+\index{tempo@{tempo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{tempo}{tempo}}
+{\footnotesize\ttfamily enum \hyperlink{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3}{Perfil\+::tempo}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+G\+E\+N\+C\+I\+A\+\_\+\+M\+I\+N\+I\+MA@{V\+I\+G\+E\+N\+C\+I\+A\+\_\+\+M\+I\+N\+I\+MA}!Perfil@{Perfil}}\index{Perfil@{Perfil}!V\+I\+G\+E\+N\+C\+I\+A\+\_\+\+M\+I\+N\+I\+MA@{V\+I\+G\+E\+N\+C\+I\+A\+\_\+\+M\+I\+N\+I\+MA}}}\hypertarget{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3a9c003caba60bd9a7cf7c52746bb6e0b2}{}\label{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3a9c003caba60bd9a7cf7c52746bb6e0b2} 
+V\+I\+G\+E\+N\+C\+I\+A\+\_\+\+M\+I\+N\+I\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+MA@{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+MA}!Perfil@{Perfil}}\index{Perfil@{Perfil}!I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+MA@{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+MA}}}\hypertarget{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3a05e56c529fb915ffb0bf8004b3df04c9}{}\label{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3a05e56c529fb915ffb0bf8004b3df04c9} 
+I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+M\+A\+\_\+\+A\+P\+I\+CP@{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+M\+A\+\_\+\+A\+P\+I\+CP}!Perfil@{Perfil}}\index{Perfil@{Perfil}!I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+M\+A\+\_\+\+A\+P\+I\+CP@{I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+M\+A\+\_\+\+A\+P\+I\+CP}}}\hypertarget{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3ac1becd537e502063c426dc298842bae2}{}\label{class_perfil_ab771cb4d642b9c57fa6c585bcea335f3ac1becd537e502063c426dc298842bae2} 
+I\+D\+A\+D\+E\+\_\+\+M\+A\+X\+I\+M\+A\+\_\+\+A\+P\+I\+CP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 73 of file Perfil.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_perfil_a7d33c31b4d676edb7d5e5ff2905ce0c0}{}\label{class_perfil_a7d33c31b4d676edb7d5e5ff2905ce0c0} 
+\index{Perfil@{Perfil}!Perfil@{Perfil}}
+\index{Perfil@{Perfil}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{Perfil()}{Perfil()}}
+{\footnotesize\ttfamily Perfil\+::\+Perfil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file Perfil.\+cpp.
+
+\hypertarget{class_perfil_a23978d891d08e7e8b4547849429eacec}{}\label{class_perfil_a23978d891d08e7e8b4547849429eacec} 
+\index{Perfil@{Perfil}!````~Perfil@{$\sim$\+Perfil}}
+\index{````~Perfil@{$\sim$\+Perfil}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{$\sim$\+Perfil()}{~Perfil()}}
+{\footnotesize\ttfamily Perfil\+::$\sim$\+Perfil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 7 of file Perfil.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_perfil_ae3e87c88b74f8f1ac18a9fb79906d7bf}{}\label{class_perfil_ae3e87c88b74f8f1ac18a9fb79906d7bf} 
+\index{Perfil@{Perfil}!determina\+Fator\+De\+Segregacao@{determina\+Fator\+De\+Segregacao}}
+\index{determina\+Fator\+De\+Segregacao@{determina\+Fator\+De\+Segregacao}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{determina\+Fator\+De\+Segregacao()}{determinaFatorDeSegregacao()}}
+{\footnotesize\ttfamily void Perfil\+::determina\+Fator\+De\+Segregacao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determina o fator de segregação. 
+
+
+\begin{DoxyItemize}
+\item A -\/ Sexo Masculino e Fumante
+\item B -\/ Sexo Masculino e não Fumante
+\item C -\/ Sexo Feminino e Fumante
+\item D -\/ Sexo Feminino e não Fumante \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Definition at line 11 of file Perfil.\+cpp.
+
+\hypertarget{class_perfil_a235697fa0afc9536654196e7651393dd}{}\label{class_perfil_a235697fa0afc9536654196e7651393dd} 
+\index{Perfil@{Perfil}!get\+Fumante@{get\+Fumante}}
+\index{get\+Fumante@{get\+Fumante}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{get\+Fumante()}{getFumante()}}
+{\footnotesize\ttfamily int Perfil\+::get\+Fumante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a4d7f7fd4f521e3054fd78ef180c2ef3b}{}\label{class_perfil_a4d7f7fd4f521e3054fd78ef180c2ef3b} 
+\index{Perfil@{Perfil}!get\+Grupo@{get\+Grupo}}
+\index{get\+Grupo@{get\+Grupo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{get\+Grupo()}{getGrupo()}}
+{\footnotesize\ttfamily int Perfil\+::get\+Grupo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a384c2efb684010011a4a42520433c03a}{}\label{class_perfil_a384c2efb684010011a4a42520433c03a} 
+\index{Perfil@{Perfil}!get\+Idade@{get\+Idade}}
+\index{get\+Idade@{get\+Idade}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{get\+Idade()}{getIdade()}}
+{\footnotesize\ttfamily int Perfil\+::get\+Idade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Perfil.\+h.
+
+\hypertarget{class_perfil_ab01922cd35d36b06d408956865650ab6}{}\label{class_perfil_ab01922cd35d36b06d408956865650ab6} 
+\index{Perfil@{Perfil}!get\+Regime@{get\+Regime}}
+\index{get\+Regime@{get\+Regime}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{get\+Regime()}{getRegime()}}
+{\footnotesize\ttfamily int Perfil\+::get\+Regime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a4ffc0651290f190979139cd06cf635ac}{}\label{class_perfil_a4ffc0651290f190979139cd06cf635ac} 
+\index{Perfil@{Perfil}!get\+Segregacao@{get\+Segregacao}}
+\index{get\+Segregacao@{get\+Segregacao}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{get\+Segregacao()}{getSegregacao()}}
+{\footnotesize\ttfamily int Perfil\+::get\+Segregacao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a67a0adbb4f1364c53e10c096b6ae6fc4}{}\label{class_perfil_a67a0adbb4f1364c53e10c096b6ae6fc4} 
+\index{Perfil@{Perfil}!get\+Sexo@{get\+Sexo}}
+\index{get\+Sexo@{get\+Sexo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{get\+Sexo()}{getSexo()}}
+{\footnotesize\ttfamily int Perfil\+::get\+Sexo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a75774f6d3b07d76780d638f4e2660e53}{}\label{class_perfil_a75774f6d3b07d76780d638f4e2660e53} 
+\index{Perfil@{Perfil}!get\+Vigencia@{get\+Vigencia}}
+\index{get\+Vigencia@{get\+Vigencia}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{get\+Vigencia()}{getVigencia()}}
+{\footnotesize\ttfamily int Perfil\+::get\+Vigencia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Perfil.\+h.
+
+\hypertarget{class_perfil_ad1eda80a3ead2aab4fb6ee4a87420dce}{}\label{class_perfil_ad1eda80a3ead2aab4fb6ee4a87420dce} 
+\index{Perfil@{Perfil}!set\+Fumante@{set\+Fumante}}
+\index{set\+Fumante@{set\+Fumante}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{set\+Fumante()}{setFumante()}}
+{\footnotesize\ttfamily void Perfil\+::set\+Fumante (\begin{DoxyParamCaption}\item[{int}]{fumante }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a171fbb4fd0041f932ce6505ff146325d}{}\label{class_perfil_a171fbb4fd0041f932ce6505ff146325d} 
+\index{Perfil@{Perfil}!set\+Grupo@{set\+Grupo}}
+\index{set\+Grupo@{set\+Grupo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{set\+Grupo()}{setGrupo()}}
+{\footnotesize\ttfamily void Perfil\+::set\+Grupo (\begin{DoxyParamCaption}\item[{int}]{grupo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a2ba0e4d30dab55c5ef3ab1dbfcb6f95f}{}\label{class_perfil_a2ba0e4d30dab55c5ef3ab1dbfcb6f95f} 
+\index{Perfil@{Perfil}!set\+Idade@{set\+Idade}}
+\index{set\+Idade@{set\+Idade}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{set\+Idade()}{setIdade()}}
+{\footnotesize\ttfamily void Perfil\+::set\+Idade (\begin{DoxyParamCaption}\item[{int}]{idade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file Perfil.\+h.
+
+\hypertarget{class_perfil_ab292bc51eb2c229dabb79ca5788d2f61}{}\label{class_perfil_ab292bc51eb2c229dabb79ca5788d2f61} 
+\index{Perfil@{Perfil}!set\+Regime@{set\+Regime}}
+\index{set\+Regime@{set\+Regime}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{set\+Regime()}{setRegime()}}
+{\footnotesize\ttfamily void Perfil\+::set\+Regime (\begin{DoxyParamCaption}\item[{int}]{regime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file Perfil.\+h.
+
+\hypertarget{class_perfil_ab9b481a1fc16ab6534e450b34e5f61fc}{}\label{class_perfil_ab9b481a1fc16ab6534e450b34e5f61fc} 
+\index{Perfil@{Perfil}!set\+Sexo@{set\+Sexo}}
+\index{set\+Sexo@{set\+Sexo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{set\+Sexo()}{setSexo()}}
+{\footnotesize\ttfamily void Perfil\+::set\+Sexo (\begin{DoxyParamCaption}\item[{int}]{sexo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Perfil.\+h.
+
+\hypertarget{class_perfil_aefc002d90218c1703a7cf26679480086}{}\label{class_perfil_aefc002d90218c1703a7cf26679480086} 
+\index{Perfil@{Perfil}!set\+Vigencia@{set\+Vigencia}}
+\index{set\+Vigencia@{set\+Vigencia}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{set\+Vigencia()}{setVigencia()}}
+{\footnotesize\ttfamily void Perfil\+::set\+Vigencia (\begin{DoxyParamCaption}\item[{int}]{vigencia }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file Perfil.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_perfil_a4ced26fed0c87e3fa425bc3d7e8cdc87}{}\label{class_perfil_a4ced26fed0c87e3fa425bc3d7e8cdc87} 
+\index{Perfil@{Perfil}!fumante@{fumante}}
+\index{fumante@{fumante}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{fumante}{fumante}}
+{\footnotesize\ttfamily int Perfil\+::fumante\hspace{0.3cm}{\ttfamily [private]}}
+
+Cliente é fumante? S\+IM ou N\+AO 
+
+Definition at line 80 of file Perfil.\+h.
+
+\hypertarget{class_perfil_ad6408bcf9e079be0f8d5df42c0d9a080}{}\label{class_perfil_ad6408bcf9e079be0f8d5df42c0d9a080} 
+\index{Perfil@{Perfil}!grupo@{grupo}}
+\index{grupo@{grupo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{grupo}{grupo}}
+{\footnotesize\ttfamily int Perfil\+::grupo\hspace{0.3cm}{\ttfamily [private]}}
+
+Grupo D\+IT conforme a profissão recebida. A, B, blank 
+
+Definition at line 81 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a310f83d33bf7be6a42b8c91d767e3597}{}\label{class_perfil_a310f83d33bf7be6a42b8c91d767e3597} 
+\index{Perfil@{Perfil}!idade@{idade}}
+\index{idade@{idade}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{idade}{idade}}
+{\footnotesize\ttfamily int Perfil\+::idade\hspace{0.3cm}{\ttfamily [private]}}
+
+Idade do cliente em anos. 
+
+Definition at line 82 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a4194b50257455f7c9d7c92555344ed47}{}\label{class_perfil_a4194b50257455f7c9d7c92555344ed47} 
+\index{Perfil@{Perfil}!regime@{regime}}
+\index{regime@{regime}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{regime}{regime}}
+{\footnotesize\ttfamily int Perfil\+::regime\hspace{0.3cm}{\ttfamily [private]}}
+
+Regime de contrato. C\+LT ou PJ 
+
+Definition at line 83 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a007271b5f462827a6ade8af3a9ff0dc5}{}\label{class_perfil_a007271b5f462827a6ade8af3a9ff0dc5} 
+\index{Perfil@{Perfil}!segregacao@{segregacao}}
+\index{segregacao@{segregacao}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{segregacao}{segregacao}}
+{\footnotesize\ttfamily int Perfil\+::segregacao\hspace{0.3cm}{\ttfamily [private]}}
+
+Fator de segregacao. 
+
+Definition at line 86 of file Perfil.\+h.
+
+\hypertarget{class_perfil_a811437646338aa346006d4edd7fda9e0}{}\label{class_perfil_a811437646338aa346006d4edd7fda9e0} 
+\index{Perfil@{Perfil}!sexo@{sexo}}
+\index{sexo@{sexo}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{sexo}{sexo}}
+{\footnotesize\ttfamily int Perfil\+::sexo\hspace{0.3cm}{\ttfamily [private]}}
+
+Sexo do cliente. F\+E\+M\+I\+N\+I\+NO OU M\+A\+S\+C\+U\+L\+I\+NO 
+
+Definition at line 84 of file Perfil.\+h.
+
+\hypertarget{class_perfil_ad5fdbf33a924b01cb3e30c364fde8a56}{}\label{class_perfil_ad5fdbf33a924b01cb3e30c364fde8a56} 
+\index{Perfil@{Perfil}!vigencia@{vigencia}}
+\index{vigencia@{vigencia}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{vigencia}{vigencia}}
+{\footnotesize\ttfamily int Perfil\+::vigencia\hspace{0.3cm}{\ttfamily [private]}}
+
+Vigência do contrato. 
+
+Definition at line 85 of file Perfil.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/609431/workspace/\+Simulador-\/\+Lib/\hyperlink{_perfil_8h}{Perfil.\+h}\item 
+C\+:/\+Users/609431/workspace/\+Simulador-\/\+Lib/\hyperlink{_perfil_8cpp}{Perfil.\+cpp}\end{DoxyCompactItemize}

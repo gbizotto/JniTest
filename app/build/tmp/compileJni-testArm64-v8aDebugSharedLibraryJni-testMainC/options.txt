@@ -4,7 +4,7 @@ c
 -fPIC
 -DANDROID
 -DANDROID_NDK
---sysroot=/Users/ilegra/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-arm64
+--sysroot=C:\\Users\\Gabriela\\AppData\\Local\\Android\\android-sdk\\ndk-bundle/platforms/android-24/arch-arm64
 -fpic
 -ffunction-sections
 -funwind-tables

@@ -1,4 +1,4 @@
-See file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC/output.txt for all output for compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC.
+See file:///C:/Android/JniTest/app/build/tmp/compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC/output.txt for all output for compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC.
 compiling foo.c successful.
 
-Finished compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC, see full log file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC/output.txt.
+Finished compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC, see full log file:///C:/Android/JniTest/app/build/tmp/compileJni-testArm64-v8aDebugSharedLibraryJni-testMainC/output.txt.
