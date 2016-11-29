@@ -85,7 +85,7 @@ static const double tabela_cobertura_morte_MAP_IPA_AED_DG_VI[OPCOES_COBERTURA_VI
 	 2000000.0
 };
 
-static const double tabela_cobertura_DIT_VI[OPCOES_COBERTURA_DIT_VI] = {25.0, 30.0, 35.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 130.0, 150.0, 180.0, 200.0, 230.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650, 700, 750, 800, 850, 900, 950, 1000};
+static const double tabela_cobertura_DIT_VI[OPCOES_COBERTURA_DIT_VI] = {25.0, 30.0, 35.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 130.0, 150.0, 180.0, 200.0, 230.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0, 550.0, 600.0, 650.0, 700.0, 750.0, 800.0, 850.0, 900.0, 950.0, 1000.0};
 
 static const int tabela_profissoes[TOTAL_PROFISSOES][2] = {
 	{/*NULO*/0,BLANK},

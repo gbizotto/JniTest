@@ -74,6 +74,5 @@ public class MainActivity extends AppCompatActivity {
 
     public native String enviaFulano(Fulano fulano, String name);
 
-
     public native String enviaJson(String json);
 }

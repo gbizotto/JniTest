@@ -58,6 +58,58 @@ void criaPerfil(const Json::Value& val, Perfil& perfil) {
 	}
 }
 
+std::string returnStringFromJson(const Json::Value& input_val) {
+
+	Json::FastWriter fastWriter;
+	std::string output_string = fastWriter.write(input_val);
+	return output_string;
+}
+
+Json::Value returnJsonFromString(const std::string& input_val) {
+
+    Json::Value output_val;
+    Json::Reader reader;
+
+    bool parsingSuccessful = reader.parse(input_val.c_str(),output_val);
+    if ( !parsingSuccessful )
+    {
+        std::cout  << "Failed to parse"
+               << reader.getFormattedErrorMessages();
+        return 0;
+    }
+    return output_val;
+}
+
+std::string listaProdutosIndicados_(const std::string input_string) {
+
+	Perfil perfil = inicializaPerfil();
+	criaPerfil(returnJsonFromString(input_string),perfil);
+
+	Json::Value output_val;
+
+	if(perfil.getVigencia() < 365) {
+		output_val["Opcoes"]["produto"].append(Json::Value(35));
+		output_val["Opcoes"]["dominio"].append("Acidentes Pessoais Individual");
+	}
+	else if (perfil.getIdade() >= 65) {
+		output_val["Opcoes"]["produto"].append(Json::Value(32));
+		output_val["Opcoes"]["dominio"].append("Acidentes Pessoais Individual Plus");
+	}
+	else {
+		if(perfil.getSexo() == perfil.FEMININO) {
+			output_val["Opcoes"]["produto"].append(Json::Value(33));
+			output_val["Opcoes"]["dominio"].append("Vida Mais Mulher");
+		}
+		output_val["Opcoes"]["produto"].append(Json::Value(31));
+		output_val["Opcoes"]["produto"].append(Json::Value(34));
+		output_val["Opcoes"]["produto"].append(Json::Value(32));
+		output_val["Opcoes"]["dominio"].append("Vida Individual");
+		output_val["Opcoes"]["dominio"].append("Vida Mais Simples");
+		output_val["Opcoes"]["dominio"].append("Acidentes Pessoais Individual Plus");
+	}
+	return returnStringFromJson(output_val);
+}
+
 /*!
  *  Cria uma lista de produtos disponíveis num arquivo JSON
  */
@@ -199,30 +251,53 @@ void criaProduto(const Json::Value& val, Produto& produto) {
 			if(!verificaValorCobertura(produto.getCobertura_ipa(), tabela_cobertura_morte_IPA_VMM, OPCOES_COBERTURA, false))
 				event["Erros"]["Vida Mais Mulher"]["IPA"].append(Json::Value(produto.getCobertura_ipa()).asDouble());
 			break;
-		/*case VI:
-			for (int i = 0; i < OPCOES_COBERTURA_VI; ++i) {
-				if(produto.getCobertura_morte() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[i])
-				if(produto.getCobertura_map() == (tabela_cobertura_morte_MAP_IPA_AED_DG_VI[i] * 2.0))
-				if(produto.getCobertura_ipa() == (tabela_cobertura_morte_MAP_IPA_AED_DG_VI[i] * 2.0))
+		case VI:
+			if(!verificaValorCobertura(produto.getCobertura_morte(), tabela_cobertura_morte_MAP_IPA_AED_DG_VI, OPCOES_COBERTURA_VI, false))
+				event["Erros"]["Vida Individual"]["Morte"].append(Json::Value(produto.getCobertura_morte()).asDouble());
+			if(!verificaValorCobertura(produto.getCobertura_map(), tabela_cobertura_morte_MAP_IPA_AED_DG_VI, OPCOES_COBERTURA_VI, true)
+				&& !(produto.getCobertura_map() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[0])) {
+				event["Erros"]["Vida Individual"]["MAP"].append(Json::Value(produto.getCobertura_map()).asDouble());
 			}
-			//Cobre valor mínimo se não for em DOBRO
-			if(produto.getCobertura_map() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[0])
-			//Cobre valor mínimo se não for em DOBRO
-			if(produto.getCobertura_ipa() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[0])
-			for (int i = 0; i < OPCOES_COBERTURA_DIT_VI; ++i) {
-				if(produto.getCobertura_morte() == tabela_cobertura_DIT_VI[i])
+			if(!verificaValorCobertura(produto.getCobertura_ipa(), tabela_cobertura_morte_MAP_IPA_AED_DG_VI, OPCOES_COBERTURA_VI, false)
+				&& !(produto.getCobertura_ipa() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[0])) {
+				event["Erros"]["Vida Individual"]["IPA"].append(Json::Value(produto.getCobertura_ipa()).asDouble());
 			}
-			for (int i = 0; i < OPCOES_COBERTURA_VI-19; ++i) {
-				if(produto.getCobertura_morte() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[i])
+			if(!verificaValorCobertura(produto.getCobertura_aed(), tabela_cobertura_morte_MAP_IPA_AED_DG_VI, OPCOES_COBERTURA_VI, false)
+				&& !(produto.getCobertura_aed() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[0])) {
+				event["Erros"]["Vida Individual"]["AED"].append(Json::Value(produto.getCobertura_aed()).asDouble());
 			}
+			if(!(produto.getDespesas_medicas() >= 100.0 && produto.getDespesas_medicas() <= 10000.0 && produto.getDespesas_medicas() <= (produto.getCobertura_morte() * 0.1)))
+				event["Erros"]["Vida Individual"]["DMHO"].append(Json::Value(produto.getDespesas_medicas()).asDouble());
+			if(!verificaValorCobertura(produto.getDoencas_graves(), tabela_cobertura_morte_MAP_IPA_AED_DG_VI, OPCOES_COBERTURA_VI-19, false))
+				event["Erros"]["Vida Individual"]["DG"].append(Json::Value(produto.getDoencas_graves()).asDouble());
+			if(!verificaValorCobertura(produto.getDiaria_it(), tabela_cobertura_DIT_VI, OPCOES_COBERTURA_DIT_VI, false))
+				event["Erros"]["Vida Individual"]["Diária DIT"].append(Json::Value(produto.getDiaria_it()).asDouble());
 			break;
 		case APIP:
+			if(!verificaValorCobertura(produto.getCobertura_map(), tabela_cobertura_morte_MAP_IPA_AED_DG_VI, OPCOES_COBERTURA_VI, false)
+				&& !(produto.getCobertura_map() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[0])) {
+				event["Erros"]["Acidentes Pessoais Individual Plus"]["MAP"].append(Json::Value(produto.getCobertura_map()).asDouble());
+			}
+			if(!verificaValorCobertura(produto.getCobertura_ipa(), tabela_cobertura_morte_MAP_IPA_AED_DG_VI, OPCOES_COBERTURA_VI, false)
+				&& !(produto.getCobertura_ipa() == tabela_cobertura_morte_MAP_IPA_AED_DG_VI[0])) {
+				event["Erros"]["Acidentes Pessoais Individual Plus"]["IPA"].append(Json::Value(produto.getCobertura_ipa()).asDouble());
+			}
+			if(!(produto.getDespesas_medicas() >= 100.0 && produto.getDespesas_medicas() <= 10000.0 && produto.getDespesas_medicas() <= (produto.getCobertura_map() * 0.1)))
+				event["Erros"]["Acidentes Pessoais Individual Plus"]["DMHO"].append(Json::Value(produto.getDespesas_medicas()).asDouble());
+			if(!verificaValorCobertura(produto.getDiaria_it(), tabela_cobertura_DIT_VI, OPCOES_COBERTURA_DIT_VI, false))
+				event["Erros"]["Acidentes Pessoais Individual Plus"]["Diária DIT"].append(Json::Value(produto.getDiaria_it()).asDouble());
 			break;
 		case APICP:
+			if(!(produto.getCobertura_map() >= 10000.0 && produto.getCobertura_map() <= 150000.0))
+				event["Erros"]["Acidentes Pessoais Individual Curto Prazo"]["MAP"].append(Json::Value(produto.getCobertura_map()).asDouble());
+			if(!(produto.getCobertura_ipa() >= 10000.0 && produto.getCobertura_ipa() <= 150000.0))
+				event["Erros"]["Acidentes Pessoais Individual Curto Prazo"]["MAP"].append(Json::Value(produto.getCobertura_ipa()).asDouble());
+			if(!(produto.getDespesas_medicas() >= 100.0 && produto.getDespesas_medicas() <= 10000.0 && produto.getDespesas_medicas() <= (produto.getCobertura_map() * 0.1)))
+				event["Erros"]["Acidentes Pessoais Individual Curto Prazo"]["DMHO"].append(Json::Value(produto.getDespesas_medicas()).asDouble());
 			break;
 		default:
-			//ERRO
-			break;*/
+			event["Erros"]["Produto inválido"];
+			break;
 	}
     Json::StyledStreamWriter styledStream;
     styledStream.write(file_id,event);
@@ -805,6 +880,20 @@ void montaJSONPremio(double premio,const char* output_file) {
 	Json::StyledStreamWriter styledStream;
     styledStream.write(file_id,event);
     file_id.close();
+}
+
+std::string gravaValorPremio_(const std::string input_string_perfil,const std::string input_string_produto) {
+
+	Perfil perfil = inicializaPerfil();
+	criaPerfil(returnJsonFromString(input_string_perfil),perfil);
+
+	Produto produto = inicializaProduto();
+	criaProduto(returnJsonFromString(input_string_produto),produto);
+
+	double valor_premio = calculaPremio(produto,perfil);
+	Json::Value premio;
+	premio["Premio"].append(Json::Value(valor_premio));
+	return returnStringFromJson(premio);
 }
 
 /*!

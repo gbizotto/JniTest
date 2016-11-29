@@ -163,6 +163,9 @@ Java_br_com_ilegratest_jnitest_MainActivity_enviaJson(JNIEnv *env, jobject insta
 
     // TODO
 
+
+    listaProdutosIndicados_(json);
+
     env->ReleaseStringUTFChars(json_, json);
 
     return env->NewStringUTF(json);
