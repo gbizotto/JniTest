@@ -1,7 +1,7 @@
 #ifndef PERFIL_H_
 #define PERFIL_H_
 
-#include <cstring>
+#include <string>
 
 class Perfil {
 public:
@@ -70,7 +70,23 @@ public:
 		return segregacao;
 	}
 
-	enum tempo { VIGENCIA_MINIMA = 365, IDADE_MAXIMA = 65, IDADE_MAXIMA_APICP = 71 };
+	int getProfissao() const {
+		return profissao;
+	}
+
+	void setProfissao(int profissao) {
+		this->profissao = profissao;
+	}
+
+	std::string getData_nascimento() const {
+		return data_nascimento;
+	}
+
+	void setData_nascimento(std::string data_nascimento) {
+		this->data_nascimento = data_nascimento;
+	}
+
+	enum tempo { VIGENCIA_MINIMA = 1, IDADE_MINIMA = 16, IDADE_MAXIMA = 70, IDADE_MAXIMA_APICP = 71, VIGENCIA_MAXIMA = 365 };
     enum sexo_tipo { FEMININO = 1, MASCULINO };
     enum { SIM = 1, NAO };
     enum regime_contrato { CLT = 1, PJ };
@@ -84,6 +100,8 @@ private:
     int sexo;				/*!< Sexo do cliente. FEMININO OU MASCULINO */
     int vigencia;			/*!< Vigência do contrato. */
     int segregacao;			/*!< Fator de segregacao. */
+    int profissao;
+	std::string data_nascimento;
 };
 
 #endif /* PERFIL_H_ */

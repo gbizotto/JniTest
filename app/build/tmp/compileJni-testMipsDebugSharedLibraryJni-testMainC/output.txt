@@ -1,4 +1,0 @@
-See file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testMipsDebugSharedLibraryJni-testMainC/output.txt for all output for compileJni-testMipsDebugSharedLibraryJni-testMainC.
-compiling foo.c successful.
-
-Finished compileJni-testMipsDebugSharedLibraryJni-testMainC, see full log file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testMipsDebugSharedLibraryJni-testMainC/output.txt.

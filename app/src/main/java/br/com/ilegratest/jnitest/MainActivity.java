@@ -5,6 +5,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
+import br.com.ilegratest.jnitest.input.Perfil;
+import br.com.ilegratest.jnitest.input.Produto;
+import br.com.ilegratest.jnitest.output.Planos;
+import br.com.ilegratest.jnitest.output.Premio;
+
 public class MainActivity extends AppCompatActivity {
 
     static {
@@ -27,28 +34,59 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String text = "";
+        String retorno = "";
 
         TextView textView1 = (TextView) findViewById(R.id.txt1);
 
-        String json = " {\n" +
-                " \t\"Perfil\" :\n" +
-                " \t{\n" +
-                "\t\t\"fumante\": 2,\n" +
-                "\t\t\"idd\": 54,\n" +
-                "\t\t\"codigoProfissao\": 1177,\n" +
-                "\t\t\"profCLT\": \"S\",\n" +
-                "\t\t\"sexo\": 0,\n" +
-                "\t\t\"vigenciaInicial\": 365\n" +
-                "\t}\n" +
-                "}";
+        Perfil perfil = new Perfil();
+        perfil.setCodigoProfissao(126);
+        perfil.setDataNascimento("08/05/1982");
+        perfil.setFumante(2);
+        perfil.setProfCLT("S");
+        perfil.setVigenciaInicial(365);
+        perfil.setSexo(2);
+
+        Gson gson = new Gson();
+        String perfilString = gson.toJson(perfil);
+        Log.v(MainActivity.class.getSimpleName(), "perfilString = " + perfilString);
 
 
-        text = enviaJson(json);
+        Produto produto = new Produto();
+        produto.setAssistFuneralFamiliar("N");
+        produto.setCobAssistenciaFuneral(5000);
+        produto.setCobInvalidezAcidente(50000);
+        produto.setCobMorte(50000);
+        produto.setCobMorteAcidental(25000);
+        produto.setCodOperacao(10);
+        produto.setDominio(33);
 
-        textView1.setText(text);
+        String produtoString = gson.toJson(produto);
+
+        retorno = enviaJson(perfilString);
+
+        Planos planos = gson.fromJson(retorno, Planos.class);
+        Log.v(MainActivity.class.getSimpleName(), "------");
+        Log.v(MainActivity.class.getSimpleName(), planos.toString());
+
+        Log.v(MainActivity.class.getSimpleName(), retorno);
+
+        textView1.setText(retorno);
+
+        TextView textView2 = (TextView) findViewById(R.id.txt2);
+        String premio = gravaPremio(perfilString,produtoString);
+
+        Premio premio1= gson.fromJson(premio, Premio.class);
+
+        Log.v(MainActivity.class.getSimpleName(), "------");
+        Log.v(MainActivity.class.getSimpleName(), premio1.toString());
+
+        textView2.setText(premio1.getCalculosVida().getPremioTotal());
+
+        Log.v(MainActivity.class.getSimpleName(), premio);
     }
 
 
     public native String enviaJson(String json);
+
+    public native String gravaPremio(String jsonPerfil, String jsonProduto);
 }

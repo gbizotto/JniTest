@@ -2662,11 +2662,11 @@ LogicError::LogicError(JSONCPP_STRING const& msg)
 {}
 JSONCPP_NORETURN void throwRuntimeError(JSONCPP_STRING const& msg)
 {
-  //throw RuntimeError(msg);
+  throw RuntimeError(msg);
 }
 JSONCPP_NORETURN void throwLogicError(JSONCPP_STRING const& msg)
 {
- // throw LogicError(msg);
+  throw LogicError(msg);
 }
 
 // //////////////////////////////////////////////////////////////////
@@ -5218,7 +5218,7 @@ StreamWriter* StreamWriterBuilder::newStreamWriter() const
   } else if (cs_str == "None") {
     cs = CommentStyle::None;
   } else {
-    //throwRuntimeError("commentStyle must be 'All' or 'None'");
+    throwRuntimeError("commentStyle must be 'All' or 'None'");
   }
   JSONCPP_STRING colonSymbol = " : ";
   if (eyc) {

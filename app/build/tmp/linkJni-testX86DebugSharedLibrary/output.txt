@@ -1,4 +1,4 @@
-See file:///C:/Android/JniTest/app/build/tmp/linkJni-testX86DebugSharedLibrary/output.txt for all output for linkJni-testX86DebugSharedLibrary.
+See file:///Users/gabrielabizotto/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testX86DebugSharedLibrary/output.txt for all output for linkJni-testX86DebugSharedLibrary.
 linking libjni-test.so successful.
 
-Finished linkJni-testX86DebugSharedLibrary, see full log file:///C:/Android/JniTest/app/build/tmp/linkJni-testX86DebugSharedLibrary/output.txt.
+Finished linkJni-testX86DebugSharedLibrary, see full log file:///Users/gabrielabizotto/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testX86DebugSharedLibrary/output.txt.

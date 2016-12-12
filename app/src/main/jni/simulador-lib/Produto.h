@@ -1,8 +1,6 @@
 #ifndef PRODUTO_H_
 #define PRODUTO_H_
 
-//#include "Tabela.h"
-
 class Produto {
 public:
 	Produto();
@@ -135,9 +133,6 @@ public:
 	void setTipo_doenca_grave(int tipo_doenca_grave) {
 		this->tipo_doenca_grave = tipo_doenca_grave;
 	}
-
-    //enum segregacao { A = 1, B, C, D };
-    //enum { SIM = 1, NAO };
 
 private:
     /*

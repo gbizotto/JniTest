@@ -1,4 +1,4 @@
-See file:///C:/Android/JniTest/app/build/tmp/linkJni-testArmeabiDebugSharedLibrary/output.txt for all output for linkJni-testArmeabiDebugSharedLibrary.
+See file:///Users/gabrielabizotto/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testArmeabiDebugSharedLibrary/output.txt for all output for linkJni-testArmeabiDebugSharedLibrary.
 linking libjni-test.so successful.
 
-Finished linkJni-testArmeabiDebugSharedLibrary, see full log file:///C:/Android/JniTest/app/build/tmp/linkJni-testArmeabiDebugSharedLibrary/output.txt.
+Finished linkJni-testArmeabiDebugSharedLibrary, see full log file:///Users/gabrielabizotto/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testArmeabiDebugSharedLibrary/output.txt.

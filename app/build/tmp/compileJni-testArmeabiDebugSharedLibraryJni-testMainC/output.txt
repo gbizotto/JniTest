@@ -1,4 +1,0 @@
-See file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testArmeabiDebugSharedLibraryJni-testMainC/output.txt for all output for compileJni-testArmeabiDebugSharedLibraryJni-testMainC.
-compiling foo.c successful.
-
-Finished compileJni-testArmeabiDebugSharedLibraryJni-testMainC, see full log file:///Users/ilegra/AndroidStudioProjects/JniTest/app/build/tmp/compileJni-testArmeabiDebugSharedLibraryJni-testMainC/output.txt.

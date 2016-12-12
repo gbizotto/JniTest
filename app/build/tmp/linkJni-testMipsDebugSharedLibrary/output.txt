@@ -1,4 +1,4 @@
-See file:///C:/Android/JniTest/app/build/tmp/linkJni-testMipsDebugSharedLibrary/output.txt for all output for linkJni-testMipsDebugSharedLibrary.
+See file:///Users/gabrielabizotto/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testMipsDebugSharedLibrary/output.txt for all output for linkJni-testMipsDebugSharedLibrary.
 linking libjni-test.so successful.
 
-Finished linkJni-testMipsDebugSharedLibrary, see full log file:///C:/Android/JniTest/app/build/tmp/linkJni-testMipsDebugSharedLibrary/output.txt.
+Finished linkJni-testMipsDebugSharedLibrary, see full log file:///Users/gabrielabizotto/AndroidStudioProjects/JniTest/app/build/tmp/linkJni-testMipsDebugSharedLibrary/output.txt.
